@@ -17,12 +17,18 @@ Use [pip](https://pypi.python.org/pypi/pip) to install any missing dependencies
 Basic Usage
 ===========
 
-0. Change Line 56 in board.py to a location on your computer
+0. Change Line 1(optional) and 2(necessary) in board.py to a location on your computer.
 
-1. Run ```python board.py``` to train the model. It will download & split the MNISt dataset into training and testing data. Then it will train a logistic regression model on the data. Lastly, it will test the trained model on the test set.
+1. Run ```python board.py``` to train the model. It will download & split the MNIST dataset into training and testing data. Then it will train a logistic regression model on the data. Lastly, it will test the trained model on the test set.
+```
+$ python board.py
+```
 
 2. You can visualize the model in tensorboard by running ```tensorboard --logdir=LOCATION_ON_YOUR_COMPUTER```
-
+```
+$ tensorboard --logdir=<LOCATION_ON_YOUR_COMPUTER>
+$ tensorboard --logdir='ALTA2/sjcho/tf_practice/Siraj/tensorflow_demo/SummaryWriter/'
+```
 That's it!
 
 Credits
